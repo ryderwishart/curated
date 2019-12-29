@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Prist | Gatsby & Prismic Starter`,
-        description: `A starter powered by Gatsby and Prismic to showcase portfolios and blogs.`,
-    author: `Marguerite Roth | marguerite.io`,
+    title: `Curated. The Best Courses from Around the Web`,
+        description: `Courses from around the web, curated so you know it's good.`,
+    author: `Ryder Wishart | ryderwishart.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -26,7 +26,8 @@ module.exports = {
     {
         resolve: 'gatsby-source-prismic-graphql',
         options: {
-            repositoryName: 'prist', // (REQUIRED, replace with your own)
+            repositoryName: 'curated',
+            accessToken: 'MC5YZ2poNVJJQUFDUUFTaUp5.77-9S--_ve-_vW7vv71B77-977-977-9Zu-_vRvvv70FYA3vv73vv70X77-9EO-_ve-_vQV_77-977-977-977-977-977-9',
             linkResolver: () => post => `/${post.uid}`,
         }
     },
